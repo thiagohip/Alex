@@ -1,7 +1,66 @@
-*{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas:
+        "topo"
+        "corpo"
+        "baixo";
+
+    grid-template-rows: 120px;
+}
+
+header {
+    border: 1px solid red;
+    grid-area: topo;
+    display: flex;
+}
+
+main {
+    border: 1px solid blue;
+    grid-area: corpo;
+}
+
+footer {
+    border: 1px solid green;
+    grid-area: baixo;
+}
+
+
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     outline: 0;
 }
 
+header {
+    clear: both;
+    background: rgb(237, 9, 9) left top;
+    height: 11vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    display: flex;
+    border: 1px solid red;
+}
+
+.box{
+    width: 20px;
+}
+
+header img.logo {
+    height: 3rem;
+}
+
+header input.search {
+    height: 3rem;
+} */
